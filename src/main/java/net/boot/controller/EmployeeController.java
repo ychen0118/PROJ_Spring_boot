@@ -20,7 +20,8 @@ public class EmployeeController {
     @GetMapping("/")
     public String viewHomePage(Model model) {
         model.addAttribute("listEmployees", employeeService.getAllEmployees());
-        return "index";
+        String rc = "index";
+        return rc;
     }
 
     @GetMapping("/showNewEmployeeForm")
